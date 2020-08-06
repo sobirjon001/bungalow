@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Akkurat;
+    src: url('Akkurat.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akkurat;
+    src: url('Akkurat-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: Akkurat;
+    src: url('Akkurat-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akkurat;
+    src: url('Akkurat-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: Akkurat;
+    src: url('Akkurat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Akkurat;
+    src: url('Akkurat-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}

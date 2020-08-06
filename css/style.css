@@ -1,0 +1,645 @@
+@import url("../font/Cambon/stylesheet.css");
+@import url("../font/Akkurat/stylesheets.css");
+
+
+            /* General styling */
+
+h1 {
+    font-family: Cambon;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+}
+h2 {
+    font-family: Cambon;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 38px;
+}
+h3 {
+    font-family: Akkurat;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+h4 {
+    font-family: Akkurat;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+h5 {
+    font-family: Cambon;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+}
+h6 {
+    font-family: Akkurat;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+p {
+    font-family: Akkurat;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+            /* Header styling */
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    z-index: 2;
+}
+nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+.burger-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto auto auto 10px;
+}
+.burger {
+    margin: auto;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+.navbar-brand {
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-brand a {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.navbar-brand a img {
+    width: 180px;
+    height: auto;
+    margin: auto;
+}
+.nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: white;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+}
+body {
+    overflow-x: hidden;
+}
+.nav-links ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 20px;
+}
+.nav-links ul li {
+    padding: 10px;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    font-family: Cambon;
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+}
+
+            /* .nav-links and .burger animation */
+
+.nav-active {
+    transform: translateX(0%);
+}
+.burg-toggle #line-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.burg-toggle #line-2 {
+    opacity: 0;
+}
+.burg-toggle #line-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links-right {
+    position: relative;
+    display: flex;
+    margin: auto 10px auto auto;
+    align-items: center;
+}
+.nav-links-right ul {
+    list-style: none;
+}
+.nav-links-right ul li {
+    display: flex;
+    width: 50px;
+    margin: auto;
+}
+#faq {
+    display: none;
+}
+.nav-links-right ul li a {
+    text-decoration: none;
+    font-family: Akkurat;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+.drop-down-login {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    max-width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    transform: translateY(-120%);
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+
+            /* .drop-down-login animation */
+
+.drop-down-login-active {
+    transform: translateY(0%);
+}
+
+.drop-down-login a {
+    text-decoration: none;
+    font-family: Akkurat;
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    margin: auto;
+}
+.drop-down-login ul {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+}
+
+.google-container {
+    width: 250px;
+    height: 60px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.logo-container {
+    height: 60px;
+    width: 32px;
+    margin-left: 10px;
+    float: left;
+    display: flex;
+}
+.icon-1 {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    
+}
+.google-container h5 {
+    float: left;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: Akkurat;
+    color: black;
+}
+.facebook-container {
+    width: 250px;
+    height: 60px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 197);
+}
+.facebook-container h5 {
+    float: left;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: Akkurat;
+    color: white;
+}
+.linkedin-container {
+    width: 250px;
+    height: 60px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(0, 115, 223);
+}
+.linkedin-container h5 {
+    float: left;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: Akkurat;
+    color: white;
+}
+.gray-banner {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-color: rgb(247, 237, 228);
+    display: flex;
+}
+.white-banner {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-color: white;
+    display: flex;
+}
+.text-center {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: column;
+}
+.text-center > img {
+    margin: auto;
+}
+.text-center h1 {
+    padding: 20px 0;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+.text-center h2 {
+    padding: 20px 0;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+.text-center p {
+    padding: 0 20px;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+.find-home-container {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    width: 100%;
+    display: inline-flex;
+}
+.find-home-box {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(255, 117, 53);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+.find-home-box h4 {
+    color: white;
+}
+.find-home-box img {
+    width: 20px;
+    height: 20px;
+}
+.refer {
+    position: fixed;
+    top: 400px;
+    left: -85px;
+    width: 200px;
+    height: 50px;
+    transform: rotate(-90deg);
+    background-color: rgb(255,117, 53);
+    border-radius: 10px;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+}
+.refer h4 {
+    color: white;
+    margin: auto;
+}
+.roomates {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.roomates img {
+    object-fit: cover;
+    vertical-align: middle;
+}
+.grid {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid-item {
+    position: relative;
+    width: 100%;
+    padding: 35px;
+}
+.grid-item span {
+    font-family: Akkurat;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+}
+.grid-item h3 {
+    padding: 20px 0;
+    color: black;
+}
+.grid-item p {
+    color: black;
+}
+.cities {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.cities img {
+    object-fit: cover;
+    vertical-align: middle;
+}
+.city-grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1024px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.city-box {
+    position: relative;
+    width: 200px;
+    height: 430px;
+    margin: auto;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+}
+.city-box span {
+    margin: auto;
+    font-family: 'Cambon', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+.austin {
+    position: relative;
+    width: 250px;
+    height: 430px;
+    margin: auto;
+    background-color: pink;
+    display: flex;
+    flex-flow: column;
+}
+.austin span {
+    display: block;
+    margin: auto;
+    font-family: 'Cambon', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+}
+.austin p {
+    margin: auto;
+    color: white;
+}
+.austin img {
+    margin: auto;
+}
+.austin div {
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    border: 2px solid white;
+    display: flex;
+}
+.max-2-grid {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 0;
+
+}
+.grid-item-2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.grid-item-2 h5 {
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+}
+.grid-item-2 p {
+    color: black;
+}
+.persone img {
+    width: 100%;
+    height: auto;
+}
+
+
+            /* Footer styling */
+
+.grid-fooret {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid-item-3 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+.address img {
+    width: 30px;
+    height: auto;
+    margin: auto;
+}
+.grid-item-3 h4 {
+    color: dimgray;
+    margin: auto;
+    text-align: center;
+}
+.grid-item-3 ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+.grid-item-3 ul li {
+    margin: auto;
+    text-align: center;
+}
+.grid-item-3 ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Akkurat;
+    font-weight: bold;
+    font-size: 20px;
+}
+.social-links {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-top: 1px solid dimgray;
+    display: flex;
+    flex-flow: column;
+}
+.social-links p {
+    padding-top: 10px;
+    color: dimgray;
+    margin: auto;
+}
+.social-links-box {
+    position: relative;
+    width: 60%;
+    max-width: 200px;
+    height: 60px;
+    margin: auto;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-links-box img {
+    width: 15px;
+    height: auto;
+    margin: auto;
+}
+
+@media only screen and (min-width: 580px) {
+
+    .refer {
+        display: flex;
+    }
+    .drop-down-login {
+        width: 400px;
+    }
+    #boy {
+        grid-area: boy;
+    }
+    #boy-text {
+        grid-area: boyt;
+    }
+    #girl {
+        grid-area: girl;
+    }
+    #girl-text {
+        grid-area: girlt;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .max-2-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "boy boyt" "girlt girl";
+    }
+    .grid-item-2 > div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-fooret {
+        grid-template-columns: auto auto auto auto;
+    }
+    .address {
+        display: flexbox;
+    }
+    .grid-item-3 h4 {
+        margin: auto 0;
+        text-align: left;
+    }
+    .social-links {
+        display: inline-flex;
+        flex-flow: row;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
